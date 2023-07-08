@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BubbleTroubleTest;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -46,11 +47,6 @@ namespace BubbleTrouble
             }
             player.ArrowRise();
             Invalidate();
-        }
-
-        private void Form1_MouseClick(object sender, MouseEventArgs e)
-        {
-            bubbles.Add(new Bubble(e.Location, 30, Color.Red));
         }
 
         private void bubbleTimer_Tick(object sender, EventArgs e)
@@ -161,6 +157,11 @@ namespace BubbleTrouble
                 arrowTimer.Start();
             }
             Invalidate();
+        }
+
+        private void Form1_MouseClick(object sender, MouseEventArgs e)
+        {
+            bubbles.Add(new Bubble(e.Location, 30, Color.Red));
         }
     }
 }

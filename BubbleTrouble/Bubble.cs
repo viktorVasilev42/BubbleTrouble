@@ -14,7 +14,7 @@ namespace BubbleTrouble
         public Color Color { get; set; }
         public Point Direction { get; set; }
 
-        public Bubble(Point center, int radius, Color color)
+        public Bubble(Point center, int radius, Color color) 
         {
             this.Center = center;
             this.Radius = radius;
@@ -64,7 +64,7 @@ namespace BubbleTrouble
         public List<Bubble> Split()
         {
             if (Radius < 10) return new List<Bubble>();
-
+            
             Bubble one = new Bubble(this.Center, this.Radius / 2, this.Color, 1, -5);
             Bubble two = new Bubble(this.Center, this.Radius / 2, this.Color, -1, -5);
             return new List<Bubble> { one, two };
