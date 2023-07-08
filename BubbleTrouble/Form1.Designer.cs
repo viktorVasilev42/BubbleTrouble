@@ -44,7 +44,7 @@
             this.startButton});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(940, 34);
+            this.toolStrip1.Size = new System.Drawing.Size(701, 25);
             this.toolStrip1.TabIndex = 0;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -54,7 +54,7 @@
             this.startButton.Image = ((System.Drawing.Image)(resources.GetObject("startButton.Image")));
             this.startButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.startButton.Name = "startButton";
-            this.startButton.Size = new System.Drawing.Size(52, 29);
+            this.startButton.Size = new System.Drawing.Size(35, 22);
             this.startButton.Text = "Start";
             this.startButton.Click += new System.EventHandler(this.startButton_Click);
             // 
@@ -68,13 +68,17 @@
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(940, 513);
+            this.BackgroundImage = global::BubbleTrouble.Properties.Resources.BrickBrick;
+            this.ClientSize = new System.Drawing.Size(701, 424);
             this.Controls.Add(this.toolStrip1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
+            this.Paint += new System.Windows.Forms.PaintEventHandler(this.Form1_Paint);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
             this.ResumeLayout(false);
